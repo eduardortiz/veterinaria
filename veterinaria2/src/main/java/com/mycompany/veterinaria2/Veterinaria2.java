@@ -14,7 +14,7 @@ public class Veterinaria2 {
         mascota.setBornYear(2019);
         mascota.setColor("Blanco");
         mascota.setName("Nena");
-        mascota.setHealdSatus("Delicado");
+        mascota.setHealdStatus("Delicado");
         
         Pet felino = new Pet();
         
@@ -22,7 +22,7 @@ public class Veterinaria2 {
         felino.setBornYear(2017);
         felino.setColor("Amarillo");
         felino.setName("Dragón");
-        felino.setHealdSatus("Bien");
+        felino.setHealdStatus("Bien");
         
         System.out.println("Su mascotas es: "+mascota.getFullPet());
         System.out.println("Su mascotas es: "+felino.getFullPet());
@@ -30,10 +30,12 @@ public class Veterinaria2 {
         Pet felino1 = new Pet();
         
         felino1.setName("Manchas");
-        felino1.setHealdSatus("Delicado");
+        felino1.setHealdStatus("Delicado");
         
-        System.out.println("su mascota a sido ingresada "+ felino1.getName() + " " + felino1.getHealdSatus());
+        System.out.println("su mascota a sido ingresada "+ felino1.getName() + " " + felino1.getHealdStatus());
        
+        Cat felinoNegro = new Cat (3, "Pantera", 2021, "Negro", "Fuerte");
+        System.out.println("Su mascotas ingresada es: " + felinoNegro.getFullPet());
         
     }
 }

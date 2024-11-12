@@ -9,5 +9,8 @@ public class Cat extends Pet {
     public void selfCleaning(){
         
     }
+    public Cat (int code, String name, int bornYear, String color, String healdStatus){
+        super(code, name, bornYear, color, healdStatus);
+    }
     
 }
