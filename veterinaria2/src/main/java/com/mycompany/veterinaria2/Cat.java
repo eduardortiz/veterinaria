@@ -9,6 +9,14 @@ public class Cat extends Pet {
     public void selfCleaning(){
         
     }
+    // creamos un cosntructor vacio
+    public Cat(){
+    
+    }
+    
+    
+    //Creamos un constructor en la clase hija  con los parametros que tenemos en la clase padre para poder acceder a ellos
+    //ejecutando el metodo super
     public Cat (int code, String name, int bornYear, String color, String healdStatus){
         super(code, name, bornYear, color, healdStatus);
     }

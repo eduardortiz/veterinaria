@@ -7,7 +7,7 @@ public class Veterinaria2 {
 
     public static void main(String[] args) {
         
-        //Creamos un objeto de la clase principal o padre (en este caso Pet se crea una mascota
+        //Creamos un constructor para un objeto de la clase principal o padre (en este caso Pet se crea una mascota
         Pet mascota = new Pet();
         
         mascota.setCode(1);
@@ -27,6 +27,7 @@ public class Veterinaria2 {
         System.out.println("Su mascotas es: "+mascota.getFullPet());
         System.out.println("Su mascotas es: "+felino.getFullPet());
         
+        //Creamos un constructor que solo tengas dos datos básicos para recibir la mascota en urgencias
         Pet felino1 = new Pet();
         
         felino1.setName("Manchas");
@@ -34,6 +35,7 @@ public class Veterinaria2 {
         
         System.out.println("su mascota a sido ingresada "+ felino1.getName() + " " + felino1.getHealdStatus());
        
+        //creamos un constructor desde una clase hija para poder usar el metodo super 
         Cat felinoNegro = new Cat (3, "Pantera", 2021, "Negro", "Fuerte");
         System.out.println("Su mascotas ingresada es: " + felinoNegro.getFullPet());
         
