@@ -27,8 +27,10 @@ public class Veterinaria2 {
         System.out.println("Su mascotas es: "+mascota.getFullPet());
         System.out.println("Su mascotas es: "+felino.getFullPet());
         
+        
         //Creamos un constructor que solo tengas dos datos básicos para recibir la mascota en urgencias
         Pet felino1 = new Pet();
+        Pet Dog = new Pet();
         
         felino1.setName("Manchas");
         felino1.setHealdStatus("Delicado");
@@ -37,7 +39,11 @@ public class Veterinaria2 {
        
         //creamos un constructor desde una clase hija para poder usar el metodo super 
         Cat felinoNegro = new Cat (3, "Pantera", 2021, "Negro", "Fuerte");
+        Dog perro1 = new Dog (4, "Tony", 2018, "Amarillo", "Fragil");
+        System.out.println("La mascota traida es :" + perro1.getFullPet());
         System.out.println("Su mascotas ingresada es: " + felinoNegro.getFullPet());
+        System.out.println("El sonido del gato es :" + felinoNegro.Sound());
+        System.out.println("El sonido del perro es :" + perro1.Sound());
         
     }
 }

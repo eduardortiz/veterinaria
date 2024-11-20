@@ -19,8 +19,8 @@ public class Pet {
     public void Move(){
         
     }
-    public void Sound(){
-        
+    public String Sound(){
+        return "Generico";
     }
 
     public int getCode() {

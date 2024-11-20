@@ -9,16 +9,21 @@ public class Cat extends Pet {
     public void selfCleaning(){
         
     }
-    // creamos un cosntructor vacio
+    // creamos un constructor vacio
     public Cat(){
     
     }
     
-    
+    public Cat (String name){
+        this.setName(name);
+    }
+    // Trajando con la Herencia
     //Creamos un constructor en la clase hija  con los parametros que tenemos en la clase padre para poder acceder a ellos
-    //ejecutando el metodo super
+    //ejecutando el metodo super que ejecuta el constructor del padre.
     public Cat (int code, String name, int bornYear, String color, String healdStatus){
         super(code, name, bornYear, color, healdStatus);
     }
-    
+    public String Sound(){
+        return "Miau";
+    }
 }
